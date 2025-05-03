@@ -1,0 +1,110 @@
+/* Основной стиль */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
+    color: black;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер */
+.container {
+    margin-top: 50px;
+}
+
+/* Кнопки меню */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.menu-button:hover {
+    background-color: darkred;
+}
+
+/* Переключатель темы */
+.toggle-container {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .menu-button {
+        display: block;
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+        margin: 10px auto;
+    }
+    .toggle-container { right: 5px; bottom: 5px; }
+}
