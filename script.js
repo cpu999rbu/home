@@ -13,5 +13,5 @@ document.getElementById("speedtestBtn").addEventListener("click", function() {
 });
 
 document.getElementById("paintBtn").addEventListener("click", function() {
-    window.location.href = "https://example.com/paint";
+    window.location.href = "https://cpu999rbu.github.io/paint/";
 });
