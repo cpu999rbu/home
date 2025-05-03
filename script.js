@@ -9,7 +9,7 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 });
 
 document.getElementById("speedtestBtn").addEventListener("click", function() {
-    window.location.href = "https://example.com/speedtest";
+    window.location.href = "https://cpu999rbu.github.io/paint/";
 });
 
 document.getElementById("paintBtn").addEventListener("click", function() {
