@@ -13,5 +13,5 @@ document.getElementById("speedtestBtn").addEventListener("click", function() {
 });
 
 document.getElementById("paintBtn").addEventListener("click", function() {
-    window.location.href = "https://example.com/";
+    window.location.href = "https://drive.google.com/drive/u/1/folders/1BK9gXIlmM15ajFzTMl7mmDAwyDN46Qkn";
 });
